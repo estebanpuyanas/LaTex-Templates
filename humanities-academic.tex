@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}  % Package for headers and footers
+\usepackage[a4paper, margin=1in]{geometry} % Standard 1-inch margins
+\usepackage{lipsum} % For dummy text
+
+% Set up header and footer for pages after the first
+\pagestyle{fancy}
+\fancyhf{}  % Clear default header/footer
+\renewcommand{\headrulewidth}{0pt}  % No header line
+\renewcommand{\footrulewidth}{0pt}  % No footer line
+
+% Set header (except on first page)
+\fancyhead[R]{Last Name}
+
+% Set footer (except on first page)
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+% First page formatting
+{\noindent
+My Name \\
+My Professor’s Name \\
+My Class Name \\
+The Date I will submit my essay.\\
+}
+
+% Add space before title
+\vspace{1cm}
+
+% Title
+\begin{center}
+    My Essay Title
+\end{center}
+
+% Reset page counter so first page doesn't count for numbering
+\thispagestyle{empty}  % No header/footer on first page
+
+% Begin essay content
+\lipsum[1-5] % Placeholder text (replace with your content)
+
+\end{document}
