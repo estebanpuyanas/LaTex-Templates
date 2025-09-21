@@ -1,4 +1,3 @@
-
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
@@ -126,7 +125,6 @@
     \resumeSubheading
       {Northeastern University}{Boston, MA}
       {Double Bachelor of Science in Computer Science \& Philosophy}{Sept. 2022 -- May 2026}
-      \resumeItem{\textit{Relevant Coursework}: OOP, Database Design \& Management, Algorithms \& Data Structures, Web Development.}
   \resumeSubHeadingListEnd
 
 
@@ -144,14 +142,22 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+  \resumeSubheading
+  {Co-Op Peer Mentor}{August 2025 - Present}
+  {Northeastern University}{Boston, MA}
+  \resumeItemListStart
+        \resumeItem{Lead biweekly workshops for $\sim{20}$ students on co-op application topics such as resume review, networking strategies, and mock interviewing.}
+        \resumeItem{Host additional 1:1 mentoring sessions to provide personalized guidance on professional development.}
+        \resumeItem{Design and deliver session content independently, demonstrating flexibility, communication, and leadership.}
+  \resumeItemListEnd
+
     \resumeSubheading
       {Software Engineer Intern}{May 2025 - August 2025}
       {EnviroLogix}{Portland, ME}
       \resumeItemListStart
-        \resumeItem{Developed and executed a fully automated end-to-end testing pipeline for a Windows-native embedded system (C/C++ backend, Qt frontend), reducing validation cycles from 14 to 2 days}
-        \resumeItem{Built a scalable, framework-free automated test infrastructure for C/C++ and Qt modules, replacing manual test procedures with maintainable test suites written from scratch.}
-        \resumeItem{Expanded and maintained internal documentation in Confluence to support knowledge transfer and testing workflows, improving accessibility for engineering teams.}
-        \resumeItem{Worked cross-functionally to identify high-priority test cases, increasing coverage and reducing regression defects}
+        \resumeItem{Engineered an end-to-end automated testing pipeline that accelerated validation from 14 to 2 days, improving release speed and reliability.}
+        \resumeItem{Developed scalable automated tests for C/C++ and Qt modules, streamlining validation by replacing manual procedures with reusable suites.}
+        \resumeItem{Partnered with cross-functional teams to target high-priority test cases, accelerating validation cycles and enhancing testing robustness.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -160,7 +166,7 @@
       \resumeItemListStart
         \resumeItem{Designed and built Python + SQL pipelines with Apache Airflow to centralize data from multiple corporate offices into unified workflows.}
         \resumeItem{Containerized data infrastructure using Docker and managed SQL databases, enabling scalable operations and faster query performance.}
-        \resumeItem{Partnered with cross-functional teams to identify and automate key workflows, streamlining processes across business units.}
+        \resumeItem{Worked with cross-functional teams to identify and automate key workflows, streamlining processes across business units.}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -172,27 +178,25 @@
       \resumeProjectHeading
           {\textbf{Dunk Detector} $|$ \emph{Python, Flask, Streamlit, MySQL, Docker}}{March 2025 - May 2025}
           \resumeItemListStart
-            \resumeItem{Created a full-stack web app for basketball scouting and analytics, delivering coaches and scouts comprehensive player performance insights.}
-            \resumeItem{Architected a multi-container system (API, DB, app) with Docker Compose, supporting scalable deployment and development.}
-            \resumeItem{Designed a relational MySQL schema to store player/team stats, contract data, and scout reports, enabling complex strategic queries.}
+            \resumeItem{Developed a full-stack web app for basketball scouting and analytics, delivering comprehensive player insights through a relational MySQL backend and interactive frontend.}
+            \resumeItem{Architected a multi-container system with Docker to support scalable deployment and development.}
             \resumeItem{Implemented data visualizations to compare player metrics, identify trends, and generate actionable recommendations.}
           \resumeItemListEnd
           
         \resumeProjectHeading
           {\textbf{File Versioning Tracker} $|$ \emph{C++, CxxTest}}{January 2025 - May 2025}
           \resumeItemListStart
-          \resumeItem{Built a CLI version control system inspired by Git/RCS, featuring repository init, file tracking, branching, commits, logs, and checkout.}
+          \resumeItem{Built a CLI version control system inspired by Git/RCS, supporting repository init, file tracking, branching, commits, logs, and checkout.}
           \resumeItem{Employed ZIP-based compression to store file snapshots and track diffs between commits.}
-          \resumeItem{Engineered a comprehensive command parser supporting repository operations (create, destroy, commit, log, checkout) with flag-based file/directory specification.}
-          \resumeItem{Created a Makefile-based build system with release, debug, coverage, and profiling configurations}
+          \resumeItem{Created a Makefile-based build system with release, debug, coverage, and profiling configurations.}
           \resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{Hexagonal Reversi} $|$ \emph{Java, Swing, JUnit}}{October 2023 - December 2023}
           \resumeItemListStart
           \resumeItem{Developed a hexagonal Othello variant with multiple game modes and implemented Alpha-Beta pruning, reducing AI turn time by 25 ms vs. MiniMax.}
-          \resumeItem{Applied the MVC pattern to create a Swing-based GUI, connecting model logic to the view for smooth gameplay.}
-          \resumeItem{Gained practical experience in software architecture, integrating components into a cohesive application.}
+          \resumeItem{Applied the MVC pattern to build a Swing-based GUI, linking model logic to the view for smooth gameplay.}
+          \resumeItem{Orchestrated integration of game logic, AI, and GUI into a cohesive, maintainable application.}
         \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -204,9 +208,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, Kotlin, C++, C\#, Elixir, Lua, SQL, HTML/CSS.} \\
-     \textbf{Databases}{: MySQL, MS SQL, PostgresQL} \\
-     \textbf{Frameworks}{: Flask, Streamlit, JUnit, CxxTest, Qt.} \\
+     \textbf{Languages}{: Java, Python, Kotlin, C++, JavaScript/TypeScript, OCaml, Lua, SQL, HTML/CSS.} \\
+     \textbf{Databases}{: MySQL, MS SQL, PostgresQL, MongoDB.} \\
+     \textbf{Frameworks}{: React, Flask, Streamlit, JUnit, CxxTest, Qt, Jest.} \\
      \textbf{Developer Tools}{: Git, Docker, Apache Airflow, AWS, Postman, MS Power Automate, GraphQL.} \\
      %\textbf{Libraries}{: pandas, NumPy, Matplotlib}
     }}
@@ -215,5 +219,4 @@
 
 %-------------------------------------------
 \end{document}
-
 
