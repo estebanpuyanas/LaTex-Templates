@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}  % Package for headers and footers
+\usepackage[a4paper, margin=1in]{geometry} % Standard 1-inch margins
+\usepackage{lipsum} % For dummy text
+\usepackage{setspace} % Package for double spacing
+\usepackage{times} % Use Times New Roman font
+\usepackage{amsmath}
+\usepackage[backend=biber,style=authoryear]{biblatex}  
+\usepackage{xurl}           
+\urlstyle{same}             
+\usepackage[colorlinks=true, urlcolor=black, hidelinks, breaklinks]{hyperref}
+
+% Set double spacing
+\doublespacing
+
+% Set up header and footer for pages after the first
+\pagestyle{fancy}
+\fancyhf{}  % Clear default header/footer
+\renewcommand{\headrulewidth}{0pt}  % No header line
+\renewcommand{\footrulewidth}{0pt}  % No footer line
+
+% Set header (except on first page)
+\fancyhead[R]{Puyana Salazar}
+
+% Set footer (except on first page)
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+% First page formatting
+{\noindent
+Esteban Puyana Salazar \\
+Chad Lee-Stronarch \\
+PHIL4550 - Philosophy of Economics \\
+End of Semester
+}
+
+% Add space before title
+\vspace{0.5cm}
+
+% Title
+\begin{center}
+\textbf{Predictonomics: How Prediction Markets Deviate Humans from Rational Choice Theory}
+\end{center}
+
+% Reset page counter so first page doesn't count for numbering
+\thispagestyle{empty}  % No header/footer on first page
+
+% Begin essay content
+Will UK's prime minister Keir Starmer say the words "nuclear" or "reform" during his next press conference? Will Russia and Ukraine agree to a ceasefire on or before March 31st, 2026? Will Jesus Christ return before January 1st, 2027? These are all questions that you, me, and anyone else of legal age can gamble real money on via prediction markets like Kalshi and Polymarket.
+
+Prediction markets, at their surface, are just another financial instrument. users purchase binary event contracts (either something happens or it does not), and they are paid out according to the outcome of the event and what side of the contract they purchased. Importantly, these markets display the real-time contract prices to reflect the crowd's holistic aggregate probability. Unlike traditional gambling conduits like casinos or sportsbooks, where betors wager against the house at fixed odds, platforms like Kalshi and Polymarket function as peer-to-peer exchanges where users trade contracts \textit{against one another}, with the house collecting a small transaction fee rather than taking a position in the outcome of the wager. As a result of this key structural difference, these prediction markets have been able to cunningly sidestep decades of state and federal gambling regulations: by successfully lobbying the Federal Commodity Futures Trading Commission (CFTC) to classify the contracts these markets use as derivatives, Kalshi, Polymarket, and the likes of them operate under federal financial law which preempts states' gambling statutes which would otherwise ban it entirely in places like Utah and Hawaii, where gambling is entirely banned. The derivative framing therefore carries a consequential side effect that traditional gambling regulations were supposed to prevent: unlike other conventional futures markets, prediction markets are \textit{not} subject to insider trading prohibitions, meaning that any participant can legally wager on an outcome that they themselves intend to cause.
+
+The cultural penetration of these markets has been exacerbated by a string of viral incidents that blur the line between spectacle and market participation. During the 2025 Coinbase earnings call, CEO Brian Armstrong ended the call by spontaneously reciting multiple crypto buzzwords after someone on his team shared a live prediction from Polymarket tracking which words and how much he would say them. Months later, at the 2026 Grammys host Trevor Noah paused mid-broadcast to say "potato" and congratulated a specific Polymarket by their username stating that "[the user] had probably just made millions of dollars", provoking widespread debate about whether the comedian had just joked or committed insider trading on national television to an audience of 17 million viewers.
+
+\newpage
+Class readings to look into:
+\begin{enumerate}
+    \item Ostorm, governing the commons.
+    \item List and Pettitt, aggregating sets of judgements.
+    \item Arrow, social choice and individual values.
+\end{enumerate}
+
+\newpage
+\begin{center}
+    Works Cited:
+    \begin{enumerate}
+        \item https://casino.betmgm.com/en/blog/states-where-gambling-is-still-illegal/
+        \item https://finance.yahoo.com/news/coinbase-ceo-concludes-earnings-call-133657276.html
+        \item https://timesofindia.indiatimes.com/etimes/trending/did-trevor-noah-just-admit-to-insider-trading-on-the-grammys-stage-the-potato-joke-explained/articleshow/127862314.cms
+        \item https://www.cftc.gov/
+    \end{enumerate}
+\end{center}
+
+\end{document}
