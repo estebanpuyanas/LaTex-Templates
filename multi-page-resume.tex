@@ -88,7 +88,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 % Role heading only (no company), use under \resumeCompanyHeading for multiple roles
@@ -139,11 +139,20 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-  \resumeCompanyHeading{Northeastern University}{Boston, MA}
+  \resumeCompanyHeading{Netrcacker Technology Corporation}{Waltham, MA}
+  \resumeRoleHeading{Associate Solutions Engineer}{Jun - Present}
+  \resumeItemListStart
+        \resumeItem{what I do at my job}
+        \resumeItem{Why I do it}
+        \resumeItem{Quantified Impact}
+  \resumeItemListEnd
 
+  \resumeCompanyHeading{Northeastern University Khoury College of Computer Sciences}{Boston, MA}
   \resumeRoleHeading{Teaching Assistant: CS3000 - Algorithms \& Data Structures}{May 2026 - Present}
   \resumeItemListStart
-    \resumeItem{Add your TA bullet points here.}
+        \resumeItem{Co-lead weekly recitations of 25–30 students and hold cross-section office hours for 135 students across two sections of CS3000.}
+        \resumeItem{Grade homework, quizzes, exams, and projects weekly; collaborate with professors to revise lecture materials and maintain grading consistency across sections.}
+        \resumeItem{Facilitate personalized weekly small-group tutoring sessions (2–5 students) to address targeted conceptual gaps in topics requested by students. Prepared additional material to server alongside these sessions.}
   \resumeItemListEnd
 
   \resumeRoleHeading{Co-Op Peer Mentor}{Aug 2025 - Present}
@@ -182,14 +191,14 @@
             \resumeItem{Configured secure authentication with password hashing and achieved 95\% code coverage via Jest/Cypress tests.}
             \resumeItem{Managed CI/CD pipeline with GitHub Actions and Render for AI-powered platform featuring Gemini 2.0 Flash auto-tagging and RAG semantic search.}
         \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Dunk Detector} $|$ {Python, Flask, Streamlit, MySQL, Docker}}{\emph{Mar 2025 - May 2025}}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web app for basketball scouting and analytics, delivering comprehensive player insights through a relational MySQL backend and interactive frontend.}
-            \resumeItem{Architected a multi-container system with Docker to support scalable deployment and development.}
-            \resumeItem{Implemented data visualizations to compare metrics, identify trends, and generate actionable recommendations.}
-          \resumeItemListEnd
+        
+        \resumeProjectHeading
+            {\textbf{Drillbit} $|$ {Python, RamaLama, FastMCP, ChromaDB, Podman, Textual}}{\emph{Apr 2026}}
+        \resumeItemListStart
+            \resumeItem{Awarded 2nd Place Overall and Best MCP Integration at the Red Hat \& Open Accelerator Hackathon, built in 3.5 hours of active hacking.}
+            \resumeItem{Engineered an AI-powered Fedora package discovery tool using a Red Hat-native toolchain (RamaLama + Podman) to run LLMs fully locally, with RAG over $\sim$150k ingested COPR packages via ChromaDB and sentence-transformers.}
+            \resumeItem{Delivered dual interfaces — a Textual TUI and GNOME Shell search provider integration — enabling natural language package search directly from the desktop activities overlay.}
+    \resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{File Versioning Tracker} $|$ {C++, CxxTest}}{\emph{Jan 2025 - May 2025}}
