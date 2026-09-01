@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Company heading only (no role), use before stacking multiple roles
+\newcommand{\resumeCompanyHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+% Role heading only (no company), use under \resumeCompanyHeading for multiple roles
+\newcommand{\resumeRoleHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEndLast}{\end{itemize}\vspace{-13pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Esteban Puyana Salazar} \\ \vspace{1pt}
+    \small \href{mailto:puyanasalazar.e@northeastern.edu}{\underline{puyanasalazar.e@northeastern.edu}} $|$ 
+    \href{https://linkedin.com/in/estebanpuyanas}{\underline{linkedin.com/in/estebanpuyanas}} $|$
+    \href{https://github.com/estebanpuyanas}{\underline{github.com/estebanpuyanas}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University $|$ GPA: 3.234/4.00}{Boston, MA}
+      {Double Bachelor of Science in Computer Science \& Philosophy}{Sept 2022 - Aug 2026}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Netcracker Technology Corporation}{Waltham, MA}
+  {Solutions Engineering Intern}{Jun 2026 - Aug 2026}
+  \resumeItemListStart
+        \resumeItem{Partnered with sales and product teams to scope and deliver tailored technical solutions for telecommunications clients, translating business requirements into actionable product recommendations.}
+        \resumeItem{Shaped the narrative and built supporting presentation materials for client-facing MVP and PoC demos, translating technical capabilities into a clear business case for on-site engagements.}
+        \resumeItem{Collaborated with sales, product, and engineering stakeholders throughout the deal lifecycle to keep proposed solutions aligned with client technical and business needs.}
+  \resumeItemListEnd
+
+  \resumeCompanyHeading{Northeastern University Khoury College of Computer Sciences}{Boston, MA}
+  \resumeRoleHeading{Teaching Assistant: CS3000 - Algorithms \& Data Structures}{May 2026 - Jul 2026}
+  \resumeItemListStart
+        \resumeItem{Co-lead weekly recitations of 25–30 students and hold cross-section office hours for 135 students across two sections of CS3000.}
+        \resumeItem{Graded homework, quizzes, exams, and projects weekly; collaborated with professors to revise lecture materials and maintain grading consistency across sections.}
+  \resumeItemListEnd
+
+  \resumeRoleHeading{Co-Op Peer Mentor}{Aug 2025 - May 2026}
+  \resumeItemListStart
+        \resumeItem{Lead biweekly workshops for $\sim{20}$ students on co-op application topics such as resume review, networking strategies, and mock interviewing.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {EnviroLogix}{Portland, ME}
+      {Software Engineer Intern}{May 2025 - Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered an end-to-end automated testing pipeline that accelerated validation from 14 to 2 days, improving release speed and reliability.}
+        \resumeItem{Developed scalable automated tests for C/C++ and Qt modules, streamlining validation by replacing manual procedures with reusable suites.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GHL Logica}{Bogota, Colombia}
+      {Data Architecture Engineer Co-Op}{Aug 2024 - Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Built Python + SQL pipelines with Apache Airflow to centralize data from multiple offices into unified workflows.}
+        \resumeItem{Containerized data infrastructure using Docker and managed SQL databases, enabling scalable operations and faster query performance.}
+      \resumeItemListEndLast
+
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Drillbit} $|$ {Python, RamaLama, FastMCP, ChromaDB, Podman, Textual}}{\emph{Apr 2026}}
+            \resumeItemListStart
+            \resumeItem{Awarded 2nd Place Overall and Best MCP Integration at the Red Hat \& Open Accelerator Hackathon, built in 3.5 hours of active hacking.}
+            \resumeItem{Engineered an AI-powered Fedora package discovery tool using a Red Hat-native toolchain (RamaLama + Podman) to run LLMs fully locally, with RAG over $\sim$150k ingested COPR packages via ChromaDB and sentence-transformers.}
+            \resumeItem{Delivered dual user interfaces: a Textual TUI and GNOME Shell search provider integration, enabling natural language package search directly from the desktop activities overlay.}
+    \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Dunk Detector} $|$ {Python, Flask, Streamlit, MySQL, Docker}}{\emph{Mar 2025 - May 2025}}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web app for basketball scouting and analytics, delivering comprehensive player insights through a relational MySQL backend and interactive frontend.}
+            \resumeItem{Architected a multi-container system with Docker to support scalable deployment and development.}
+            \resumeItem{Implemented data visualizations to compare metrics, identify trends, and generate actionable recommendations.}
+          \resumeItemListEndLast
+    \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills And Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, Kotlin, C++, JavaScript/TypeScript, SQL, HTML/CSS.} \\
+     \textbf{Databases}{: MySQL, MS SQL, PostgreSQL, MongoDB.} \\
+     \textbf{Frameworks}{: React, Flask, Streamlit, JUnit, Jest.} \\
+    \textbf{Developer Tools}{: Git, Docker, Apache Airflow, AWS (EC2, S3, Lambda), GraphQL, Postman.} \\
+    \textbf{Awards}{: 2nd Place Overall \& Best MCP Integration: Red Hat \& Open Accelerator Hackathon.}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
